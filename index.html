@@ -18,3 +18,8 @@ title: Hank Quinlan, Horrible Cop
 	<li><span>{{ member.name }}</span> <a href="https://github.com/{{ member.github }}">{{ member.github }}</a> </li>
 	{% endfor %}
 </ul>
+<ul class="posts">
+	{% for row in site.data.dataset %}
+	<li><span>{{ row.utterance }}</span> </li>
+	{% endfor %}
+</ul>
