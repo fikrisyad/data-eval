@@ -12,3 +12,9 @@ title: Hank Quinlan, Horrible Cop
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
+
+<ul class="posts">
+	{% for member in site.data.members %}
+	<li><span>{{ member.name }}</span> <a href="https://github.com/{{ member.github }}">{{ member.github }}</a> </li>
+	{% endfor %}
+</ul>
